@@ -4,10 +4,10 @@ namespace assignment1_part3
 {
     class Person
     {
-        public string FirstName {get; set;}
-        public string LastName {get; set;}
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
 
-        public int YearOfBirth {get; set;}
+        public int YearOfBirth { get; set; }
 
         public Person(string firstName, string lastName)
         {
@@ -24,6 +24,11 @@ namespace assignment1_part3
         {
 
             return DateTime.Now.Year - YearOfBirth;
+        }
+
+        public string PersonInfo()
+        {
+            return $"\nPerson: {GetFullName()} is {GetAge()} years old";
         }
     }
 }
