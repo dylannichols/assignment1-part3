@@ -57,7 +57,7 @@ namespace assignment1_part3
                 Console.Write("Enter year of birth: ");
                 var yearInput = Console.ReadLine();
                 isNum = int.TryParse(yearInput, out year);
-                if (!isNum || year < 1800 || year > 2018)
+                if (!isNum || year < 1800 || year > DateTime.Now.Year)
                 {
                     Console.WriteLine("Invalid input");
                 }
